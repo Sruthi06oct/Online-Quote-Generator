@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Quote Generator</title> 
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #667eea, #764ba2);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.3);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      width: 350px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    #quote {
+      font-size: 18px;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.4;
+    }
+
+    #author {
+      margin-top: 10px;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      background: #ffffff;
+      color: #333;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+ <body>  <div class="card">
+    <h2>✨ AI Quote Generator ✨</h2>
+    <p id="quote">Click the button to get a quote</p>
+    <h3 id="author"></h3>
+    <button onclick="getQuote()">Get Quote</button>
+  </div>
+ <script src="script.js">
+</script> 
+</body> 
+</html>
